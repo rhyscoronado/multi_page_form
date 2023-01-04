@@ -1,11 +1,10 @@
 name: multi_page_form
 description: Multi Page Form for flutter
-version: 0.0.2
-author: Adarsh Kumar <kadarsh.singh99@gmail.com>
+version: 0.0.3
 homepage:  https://github.com/kadarsh11/multi_page_form
 
 environment:
-  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+  sdk: '>=2.3.0 <3.0.0'
 
 dependencies:
   flutter:

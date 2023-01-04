@@ -21,7 +21,6 @@ class _MultiPageFormState extends State<MultiPageForm> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     totalPage = widget.totalPage;
   }
@@ -45,7 +44,7 @@ class _MultiPageFormState extends State<MultiPageForm> {
                 children: <Widget>[
                   currentPage == 1
                       ? Container()
-                      : FlatButton(
+                      : TextButton(
                     child: Text("Previous"),
                     onPressed: () {
                       setState(() {
@@ -54,11 +53,11 @@ class _MultiPageFormState extends State<MultiPageForm> {
                     },
                   ),
                   currentPage == totalPage
-                      ? FlatButton(
+                      ? TextButton(
                     child: Text("Submit"),
                     onPressed: widget.onFormSubmitted,
                   )
-                      : FlatButton(
+                      : TextButton(
                     child: Text("Next"),
                     onPressed: () {
                       setState(() {
